@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Vertex Capital — VC Portal</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
+<link rel="stylesheet" href="/css/style.css"/>
+</head>
+<body>
+<div class="app">
+  <!-- SIDEBAR -->
+  <aside class="sidebar" id="sidebar">
+    <div class="sb-logo">
+      <div class="sb-logo-name">Vertex Capital</div>
+      <div class="sb-logo-sub">Investment Portal</div>
+    </div>
+    <div class="sb-section">Overview</div>
+    <div class="sb-item active" data-page="dashboard">  <span class="sb-icon">◈</span> Dashboard</div>
+    <div class="sb-item"        data-page="pipeline">   <span class="sb-icon">⌥</span> Pipeline   <span class="sb-badge" id="badge-pipeline">12</span></div>
+    <div class="sb-item"        data-page="portfolio">  <span class="sb-icon">◎</span> Portfolio</div>
+    <div class="sb-section">Workflow</div>
+    <div class="sb-item"        data-page="screening">  <span class="sb-icon">◻</span> Screening  <span class="sb-badge" id="badge-screening">5</span></div>
+    <div class="sb-item"        data-page="duedil">     <span class="sb-icon">◫</span> Due Diligence</div>
+    <div class="sb-item"        data-page="termsheet">  <span class="sb-icon">◑</span> Term Sheet</div>
+    <div class="sb-section">Team</div>
+    <div class="sb-item"        data-page="team">       <span class="sb-icon">◉</span> Team workspace <span class="sb-badge sb-badge-warn" id="badge-team">4</span></div>
+    <div class="sb-section">Reports</div>
+    <div class="sb-item"        data-page="analytics">  <span class="sb-icon">◳</span> Analytics</div>
+    <div class="sb-footer">
+      <div>FY 2025–26 · Q4</div>
+      <div style="margin-top:4px;opacity:.7;">Logged in: Priya S.</div>
+    </div>
+  </aside>
+
+  <!-- MAIN CONTENT -->
+  <main class="main" id="main">
+    <div id="page-content">
+      <!-- Injected by JS -->
+    </div>
+  </main>
+</div>
+
+<!-- Toast -->
+<div id="toast" class="toast"></div>
+
+<script src="/js/api.js"></script>
+<script src="/js/utils.js"></script>
+<script src="/js/pages/dashboard.js"></script>
+<script src="/js/pages/pipeline.js"></script>
+<script src="/js/pages/portfolio.js"></script>
+<script src="/js/pages/duedil.js"></script>
+<script src="/js/pages/termsheet.js"></script>
+<script src="/js/pages/team.js"></script>
+<script src="/js/pages/analytics.js"></script>
+<script src="/js/app.js"></script>
+</body>
+</html>
